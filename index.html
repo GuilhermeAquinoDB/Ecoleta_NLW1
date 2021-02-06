@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<!-- METADADOS -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+			<title> Ecoleta </title>
+
+		<!-- link que pega font do google e referencia --> 
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&Ubuntu:wght@700:wght@300;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+
+		<link rel="stylesheet" type="text/css" href="styles/home.css">
+
+		<link rel="stylesheet" type="text/css" href="styles/modal.css">
+
+		<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+	</head>
+<body>
+	<!-- DIV= caixas de blocos no html -->
+	<div id="page-home">
+
+		<div class="content">
+
+			<header>
+					
+					<img src="icones/logo.svg" alt="Logomarca" >
+
+					<a href="create_point.html"> <span></span> Cadastre um ponto de coleta </a>
+
+			</header>
+	<!-- parte principal do documento MAIN -->
+			<main>
+
+				<h1> Seu marketplace de coleta de resíduos</h1>
+
+
+					<p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
+
+				<a href="#"> <span></span> <strong>Pesquisar pontos de coleta</strong> </a>
+			</main>
+		</div>
+	</div>
+
+	<div id="modal" class="hide">
+		<div class="content">
+			<div class="header">
+				<h1>Pontos de Coleta</h1>
+				<a href="#">Fechar</a> <!-- # para não recarregar a pagina, somente voltar-->
+			</div>
+			<form action="search-results.html">
+				<label for="search">Cidade</label>
+				<div class="search field">
+					<input 
+					type="text" 
+					name="search"
+					placeholder="Pesquise por Cidade" >
+					<button>
+						<img src="icones/search.svg" alt="Buscar">
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="scripts/index.js" ></script>
+
+</body>
+</html>
